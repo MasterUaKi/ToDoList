@@ -3,9 +3,10 @@
 </script>
 
 <template>
-    <div class="furall">
+    
         <div class="main">
             <div id="mainmenu">
+                
                 <p class="mainmenutext">
                     Das ist ein Projeckt füt Ihre Arbeit zu planieren 
                 </p>
@@ -30,7 +31,7 @@
                 </div>    
             </div> 
         </div>
-    </div>
+    
 </template>
 
 <style scoped>
@@ -40,29 +41,25 @@
     border-style: solid;
     border-color: rgb(131, 10, 50);
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 2px; 
 
-    place-items: center;
-
- 
+    display:grid;
+    grid-template-columns: 250px 250px;
 }
 .main {
+    align-self: center;
+    justify-self: center;
     margin: 0px;
     padding: 0px;
-    width:auto;
-    height: auto;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 215px);
 
     border-style: solid;
     border-color: rgb(29, 37, 29);
     border-width: 1px;
     border-radius: 2px;
-    place-items: center;
-    align-items: center;
-    text-align: center;
-     
+
+    display:flex;
+    
 }
 #mainmenu {
     margin: 5px;
@@ -77,6 +74,7 @@
     position: relative;
     display: block;
 }
+
 .mainmenutext {
     font-size: 12px;
     font-family: 'Times New Roman', Times, serif;
